@@ -10,7 +10,7 @@ aceptacion que las personas han dado acerca del producto evaluado, los niveles s
 
 Al tener ya la matriz vamos a Hadoop y enviamos como datos de entrada para su analisis en Map-Reduce.
 
-#### Algoritmo:
+#### Algoritmo
 
 Paso 1: Inicialmente centroide al azar se selecciona sobre la base de datos.
 
@@ -25,7 +25,17 @@ Paso 5: Reduce recoge todos estos datos y calcular los nuevos centroides corresp
 Paso 6: En la configuración del trabajo, estamos leyendo ambos archivos y la comprobación ;si la diferencia entre el antiguo y el nuevo centro de gravedad es menor de 0,1 y luego
 se alcanza la convergencia ;sino repita el paso 2 con nuevos centroides.
 
-## Pasos de inicio a final
+#### Pasos de inicio a final
+
+1. Descargar datos/tweets streaming
+
+Ejecutar el archivo "source/descarga_twitter.py", esto creara un JSON y en este se guardaran los datos "input/datos_twitter.json"
+
+2. Analisis de sentimientos de los datos obtenidos
+
+Ejecutar el archivo "source/descarga_twitter.py"
+
+3. 
 
 Ejemplo:
 
