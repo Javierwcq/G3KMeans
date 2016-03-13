@@ -27,41 +27,8 @@ se alcanza la convergencia ;sino repita el paso 2 con nuevos centroides.
 
 #### Pasos de inicio a final
 
-1. Descargar datos/tweets streaming
-
-Ejecutar el archivo "source/descarga_twitter.py", esto creara un JSON y en este se guardaran los datos "input/datos_twitter.json"
-
-2. Analisis de sentimientos de los datos obtenidos
-
-Ejecutar el archivo "source/descarga_twitter.py"
-
-3. 
-
-Ejemplo:
-
-Para los datos esto deberia funcionar de manera sencilla:
-
-3.0
-0.0
-0.0
-0.0
-0.0
-0.0
-1.0
-0.0
-3.0
-0.0
-0.0
--1.0
--2.0
-1.0
-0.0
-0.0
-1.0
-0.0
-6.0
-...
-
-
-
+1. Descargar datos tweets streaming, ejecutar el archivo "/source/descarga_twitter.py", esto creara un JSON y en este se guardaran los datos "/input/datos_twitter.json".
+2. Analisis de sentimientos de los datos obtenidos, ejecutar el archivo "/source/descarga_twitter.py", este generara los puntos que iran al Map-Reduce para su analisis "/input/data.txt".
+3. Enviar data.txt a Hadoop para que este realize el algoritmo de K-means en Map-Reduce "/SOURCE-MAPREDUCE/K-means_Map_reduce/map_reduce_kmeans.java" y entregue el resultado.
+4. Enviar data.txt a Hadoop para que este realize el algoritmo de K-means en Stand-Alone "SOURCE-MAPREDUCE/K-means_Stand_Alone/" y entregue el resultado.
 
