@@ -1,5 +1,4 @@
-Clustering K-means
-
+# Clustering K-means 
 K-means clustering es un algoritmo de agrupamiento clásica que utiliza una expectativa de maximización como técnica para particionar un número de puntos de datos en k grupos.
 
 El objetivo de este proyecto fue la implementación de un marco de Java para la realización de k-means clustering utilizando Hadoop MapReduce.
@@ -10,7 +9,6 @@ Luego se aplico un analisis de sentimientos (Machine Learning) para ordenar una 
 aceptacion que las personas han dado acerca del producto evaluado, los niveles son desde -6 hasta 6.
 
 Al tener ya la matriz vamos a Hadoop y enviamos como datos de entrada para su analisis ya sea Stand-Alone o Map-Reduce.
-
 
 Algoritmo:
 Paso 1: Inicialmente centroide al azar se selecciona sobre la base de datos.
